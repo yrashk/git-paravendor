@@ -95,6 +95,7 @@ case "$1" in
     git config --blob "$(git ls-tree --object-only paravendor config)" --get-all paravendor.remote
     ;;
   show-refs)
+    check_if_initialized || { echo "not initialized, run 'git paravendor init' first" ; exit 1; }
     git config --blob "$(git ls-tree --object-only paravendor config)" --get-all ref."$2".refs
     ;;
   show-ref)
