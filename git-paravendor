@@ -1,5 +1,27 @@
 #! /usr/bin/env bash
 
+# defer implementation by Patrick Hemmer @phemmer
+# https://gist.github.com/phemmer/e943dce38eaa948f1893d9392741970f
+function _run_deferred() {
+  local _depth="$BASHPID.${#FUNCNAME[@]}"
+  [[ "$_depth" != "$_deferred_depth" ]] && return
+  local opt=$-
+  set +e
+  for (( i=${#_deferred[@]} - 1; i >= 0; i-- )); do
+    eval "${_deferred[i]}"
+  done
+  [[ "$opt" == *e* ]] && set -e
+}
+function _defer() {
+  _deferred_depth="$BASHPID.${#FUNCNAME[@]}"
+  _deferred+=( "$(printf '%q ' "$@")" )
+}
+# This has to be an alias so that the `trap ... RETURN` runs appropriately.
+shopt -s expand_aliases
+alias defer='declare -a _deferred; declare _deferred_depth; trap _run_deferred EXIT RETURN; _defer'
+#
+
+
 working_directory_clean () {
   if output=$(git status --porcelain) && [ -z "$output" ]; then
     return 0
@@ -20,8 +42,8 @@ check_if_initialized () {
   else
     git fetch --no-tags --quiet "$remote" || return 1
     git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
-    git branch --quiet paravendor "$remote/paravendor"
-    git branch --quiet --set-upstream-to="$remote/paravendor" paravendor
+    git branch --quiet paravendor "$remote/paravendor" || return 1
+    git branch --quiet --set-upstream-to="$remote/paravendor" paravendor || return 1
   fi
 }
 
@@ -42,11 +64,15 @@ sync() {
     echo -n "."
   done <<< "$(git ls-remote --heads --tags "$1")"
   echo
-  git add "$top_level/config"
-  git commit --quiet -m "git paravendor: sync remote: $1"
+  git add "$top_level/config" || { echo "can't add config"; return 1;}
+  git commit --quiet -m "git paravendor: sync remote: $1" || { echo "can't commit config" ; return 1; }
   tree=$(git rev-parse --short 'HEAD^{tree}')
   merge=$(git commit-tree "$tree" $refs -p "$(git rev-parse --short HEAD)" -m "git paravendor: ref sync for $1")
-  git update-ref refs/heads/paravendor "$merge"
+  if [ $? -ne 0 ]; then
+    echo "can't commit merge";
+    return 1
+  fi
+  git update-ref refs/heads/paravendor "$merge" || { echo "can't update ref for paravendor"; return 1; }
 }
 
 
@@ -58,10 +84,10 @@ case "$1" in
     tmpdir=$(mktemp -d)
     git init --quiet "$tmpdir"
     cd "$tmpdir"
-    git config -f "config" --add paravendor.version 1
-    git add "config"
-    git commit --quiet -m "git paravendor init"
-    git push "$top_level" master:paravendor --quiet --force 
+    git config -f "config" --add paravendor.version 1 || { echo "can't init config" ; exit 1; }
+    git add "config" || { echo "can't add config"; exit 1; }
+    git commit --quiet -m "git paravendor init" || { echo "can't commit config"; exit 1; }
+    git push "$top_level" master:paravendor --quiet --force || { echo "can't push paravendor branch"; exit 1; }
     rm -rf "$tmpdir"
     ;;
   add)
@@ -70,15 +96,11 @@ case "$1" in
     top_level=$(git rev-parse --show-toplevel)
     echo "Adding $2"
     git checkout --quiet paravendor
-    git config -f "$top_level/config" --get-urlmatch remote.added "$2" >/dev/null && {
-       echo "$2 has been already added, aborting" 
-       git checkout --quiet "$current_head"
-       exit 1
-    }
-    git config -f "$top_level/config" --add remote."$2".added true
-    git config -f "$top_level/config" --add paravendor.remote "$2"
-    sync "$2"
-    git switch --quiet -
+    defer git switch --quiet -
+    git config -f "$top_level/config" --get-urlmatch remote.added "$2" >/dev/null && { echo "$2 has been already added, aborting"; exit 1; }
+    git config -f "$top_level/config" --add remote."$2".added true || { echo "can't modify config"; exit 1; }
+    git config -f "$top_level/config" --add paravendor.remote "$2" || { echo "can't modify config"; exit 1; }
+    sync "$2" || exit 1
     ;;
   sync)
     check_if_initialized || { echo "not initialized, run 'git paravendor init' first" ; exit 1; }
@@ -90,9 +112,9 @@ case "$1" in
     else
         echo "Syncing $2"
         top_level=$(git rev-parse --show-toplevel)
-        git checkout --quiet paravendor
-        sync "$2"
-        git switch --quiet -
+        git checkout --quiet paravendor || { echo "can't check out paravendor branch"; exit 1; }
+        defer git switch --quiet -
+        sync "$2" || exit 1
     fi
     ;;
   list)
