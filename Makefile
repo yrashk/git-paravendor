@@ -21,3 +21,6 @@ test/test_helper/bats-assert: Makefile
 	rm -rf test/test_helper/bats-assert
 	git clone . --no-checkout test/test_helper/bats-assert
 	cd test/test_helper/bats-assert && git checkout ${bats_assert_ref}
+
+clean:
+	rm -rf test/bats test/test_helper/bats-assert test/test_helper/bats-support
