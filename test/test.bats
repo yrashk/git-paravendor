@@ -59,6 +59,7 @@ teardown() {
   assert_success
   cd "$tmpdir1"
   run git paravendor list
+  refute_line "set up to track"
   assert_line "$TOPDIR"
   run git rev-parse --abbrev-ref HEAD
   assert_output "master"

@@ -17,7 +17,7 @@ check_if_initialized () {
   else
     git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
     git branch --quiet paravendor "$remote/paravendor"
-    git branch --set-upstream-to="$remote/paravendor" paravendor
+    git branch --quiet --set-upstream-to="$remote/paravendor" paravendor
   fi
 }
 
