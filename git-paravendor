@@ -15,10 +15,9 @@ check_if_initialized () {
   if [[ -z "$(git ls-remote "$remote" refs/heads/paravendor)" ]]; then
     return 1
   else
-    working_directory_clean || { echo "git working directory is not clean, can't fetch paravendor from $remote, aborting"; exit 1; }
     git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
-    git checkout --quiet -b paravendor "$remote/paravendor"
-    git checkout "$branch"
+    git branch --quiet paravendor "$remote/paravendor"
+    git branch --set-upstream-to="$remote/paravendor" paravendor
   fi
 }
 
