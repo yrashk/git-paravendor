@@ -88,6 +88,7 @@ case "$1" in
   show-ref)
     check_if_initialized || { echo "not initialized, run 'git paravendor init' first" ; exit 1; }
     git config --blob "$(git ls-tree --object-only paravendor config)" --get ref."$2#refs/heads/$3".commit ||
+    git config --blob "$(git ls-tree --object-only paravendor config)" --get ref."$2#refs/tags/$3^{}".commit ||
     git config --blob "$(git ls-tree --object-only paravendor config)" --get ref."$2#refs/tags/$3".commit ||
     git config --blob "$(git ls-tree --object-only paravendor config)" --get ref."$2#$3".commit 
     ;;
