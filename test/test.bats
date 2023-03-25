@@ -64,3 +64,23 @@ teardown() {
   run git rev-parse --abbrev-ref HEAD
   assert_output "master"
 } 
+
+@test "cloning repo with para-vendoring dependencies, in a detached checkout" {
+  run git paravendor init
+  assert_success
+  run git paravendor add "$TOPDIR"
+  assert_success
+  run git paravendor list
+  assert_line "$TOPDIR"
+  tmpdir1=$(mktemp -d)
+  run git clone "$tmpdir" "$tmpdir1" --no-checkout
+  assert_success
+  cd "$tmpdir1"
+  run git checkout --detach master
+  assert_success
+  run git paravendor list
+  refute_line "set up to track"
+  assert_line "$TOPDIR"
+  run git rev-parse --abbrev-ref paravendor
+  assert_output "paravendor"
+} 

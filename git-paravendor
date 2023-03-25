@@ -12,6 +12,9 @@ check_if_initialized () {
   git show-ref --quiet --verify refs/heads/paravendor && return 0 
   branch=$(git rev-parse --abbrev-ref HEAD)
   remote=$(git config branch."$branch".remote)
+  if [[ -z "$remote" ]]; then
+    remote=origin
+  fi;
   if [[ -z "$(git ls-remote "$remote" refs/heads/paravendor)" ]]; then
     return 1
   else
