@@ -64,4 +64,18 @@ teardown() {
   assert_output "master"
 } 
 
-
+@test "cloning repo with para-vendoring dependencies, unclear working dir" {
+  run git paravendor init
+  assert_success
+  run git paravendor add "$TOPDIR"
+  assert_success
+  run git paravendor list
+  assert_line "$TOPDIR"
+  tmpdir1=$(mktemp -d)
+  run git clone "$tmpdir" "$tmpdir1"
+  assert_success
+  cd "$tmpdir1"
+  touch file
+  run git paravendor list
+  assert_failure
+}
