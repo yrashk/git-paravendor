@@ -18,6 +18,7 @@ check_if_initialized () {
   if [[ -z "$(git ls-remote "$remote" refs/heads/paravendor)" ]]; then
     return 1
   else
+    git fetch --no-tags --quiet "$remote" || return 1
     git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
     git branch --quiet paravendor "$remote/paravendor"
     git branch --quiet --set-upstream-to="$remote/paravendor" paravendor

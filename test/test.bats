@@ -40,9 +40,9 @@ teardown() {
 @test "add and clone dependency" {
   run git paravendor init
   assert_success
-  run git paravendor add "$TOPDIR"
+  run git paravendor add https://github.com/yrashk/git-paravendor
   assert_success
-  ref=$(git paravendor show-ref "$TOPDIR" master)
+  ref=$(git paravendor show-ref https://github.com/yrashk/git-paravendor master)
   run git clone . --no-checkout t && cd t && git checkout "$ref"
   assert_success
 }
