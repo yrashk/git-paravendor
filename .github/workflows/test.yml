@@ -1,0 +1,23 @@
+name: Test
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-deps: 0
+
+    - name: Run test
+      run: |
+        git config --global user.name CI
+        git config --global user.email no@email
+        make test
