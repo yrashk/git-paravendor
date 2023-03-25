@@ -31,11 +31,21 @@ teardown() {
 @test "add and list dependencies" {
   run git paravendor init
   assert_success
-  run git paravendor add "$TOPDIR"
+  run git paravendor add "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "$TOPDIR"
+  assert_line "file://$TOPDIR"
 } 
+
+@test "add duplicate dependency" {
+  run git paravendor init
+  assert_success
+  run git paravendor add "file://$TOPDIR"
+  assert_success
+  run git paravendor add "file://$TOPDIR"
+  assert_failure
+  assert_line "file://$TOPDIR has been already added, aborting"
+}
 
 @test "add and clone dependency" {
   run git paravendor init
@@ -50,17 +60,17 @@ teardown() {
 @test "cloning repo with para-vendoring dependencies" {
   run git paravendor init
   assert_success
-  run git paravendor add "$TOPDIR"
+  run git paravendor add "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "$TOPDIR"
+  assert_line "file://$TOPDIR"
   tmpdir1=$(mktemp -d)
   run git clone "$tmpdir" "$tmpdir1"
   assert_success
   cd "$tmpdir1"
   run git paravendor list
   refute_line "set up to track"
-  assert_line "$TOPDIR"
+  assert_line "file://$TOPDIR"
   run git rev-parse --abbrev-ref HEAD
   assert_output "master"
 } 
@@ -68,10 +78,10 @@ teardown() {
 @test "cloning repo with para-vendoring dependencies, in a detached checkout" {
   run git paravendor init
   assert_success
-  run git paravendor add "$TOPDIR"
+  run git paravendor add "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "$TOPDIR"
+  assert_line "file://$TOPDIR"
   tmpdir1=$(mktemp -d)
   run git clone "$tmpdir" "$tmpdir1" --no-checkout
   assert_success
@@ -80,7 +90,7 @@ teardown() {
   assert_success
   run git paravendor list
   refute_line "set up to track"
-  assert_line "$TOPDIR"
+  assert_line "file://$TOPDIR"
   run git rev-parse --abbrev-ref paravendor
   assert_output "paravendor"
 } 
