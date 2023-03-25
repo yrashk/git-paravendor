@@ -1,11 +1,11 @@
 #! /usr/bin/env bash
 
 working_directory_clean () {
-if output=$(git status --porcelain) && [ -z "$output" ]; then
-  return 0 
-else
-  return 1
- fi
+  if output=$(git status --porcelain) && [ -z "$output" ]; then
+    return 0
+  else
+    return 1
+  fi
 }
 
 check_if_initialized () {
@@ -49,18 +49,20 @@ sync() {
 case "$1" in
   init)
     working_directory_clean || { echo "git working directory is not clean, aborting"; exit 1; }
-    current_head=$(git rev-parse --abbrev-ref HEAD)
     top_level=$(git rev-parse --show-toplevel)
-    git checkout --quiet --orphan paravendor || { echo "can't create 'paravendor' branch, aborting"; exit 1;}
-    git config -f "$top_level/config" --add paravendor.version 1
-    git add "$top_level/config"
+    git show-ref  --quiet --verify refs/heads/paravendor && { echo "'paravendor' branch already exists, aborting"; exit 1;}
+    tmpdir=$(mktemp -d)
+    git init --quiet "$tmpdir"
+    cd "$tmpdir"
+    git config -f "config" --add paravendor.version 1
+    git add "config"
     git commit --quiet -m "git paravendor init"
-    git checkout --quiet "$current_head"
+    git push "$top_level" master:paravendor --quiet --force 
+    rm -rf "$tmpdir"
     ;;
   add)
     check_if_initialized || { echo "not initialized, run 'git paravendor init' first" ; exit 1; }
     working_directory_clean || { echo "git working directory is not clean, aborting"; exit 1; }
-    current_head=$(git rev-parse --abbrev-ref HEAD)
     top_level=$(git rev-parse --show-toplevel)
     echo "Adding $2"
     git checkout --quiet paravendor
@@ -72,7 +74,7 @@ case "$1" in
     git config -f "$top_level/config" --add remote."$2".added true
     git config -f "$top_level/config" --add paravendor.remote "$2"
     sync "$2"
-    git checkout --quiet "$current_head"
+    git switch --quiet -
     ;;
   sync)
     check_if_initialized || { echo "not initialized, run 'git paravendor init' first" ; exit 1; }
@@ -84,10 +86,9 @@ case "$1" in
     else
         echo "Syncing $2"
         top_level=$(git rev-parse --show-toplevel)
-        current_head=$(git rev-parse --abbrev-ref HEAD)
         git checkout --quiet paravendor
         sync "$2"
-        git checkout --quiet "$current_head"
+        git switch --quiet -
     fi
     ;;
   list)
