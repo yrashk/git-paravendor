@@ -46,3 +46,20 @@ teardown() {
   run git clone . --no-checkout t && cd t && git checkout "$ref"
   assert_success
 }
+
+@test "cloning repo with para-vendoring dependencies" {
+  run git paravendor init
+  assert_success
+  run git paravendor add "$TOPDIR"
+  assert_success
+  run git paravendor list
+  assert_line "$TOPDIR"
+  tmpdir1=$(mktemp -d)
+  run git clone "$tmpdir" "$tmpdir1"
+  assert_success
+  cd "$tmpdir1"
+  run git paravendor list
+  assert_line "$TOPDIR"
+} 
+
+

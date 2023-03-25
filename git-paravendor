@@ -9,7 +9,16 @@ else
 }
 
 check_if_initialized () {
-  git show-ref --quiet --verify refs/heads/paravendor 
+  git show-ref --quiet --verify refs/heads/paravendor && return 0 
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  remote=$(git config branch."$branch".remote)
+  if [[ -z "$(git ls-remote "$remote" refs/heads/paravendor)" ]]; then
+    return 1
+  else
+    git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
+    git checkout --quiet -b paravendor "$remote/paravendor"
+    git show paravendor
+  fi
 }
 
 sync() {
