@@ -17,7 +17,7 @@ check_if_initialized () {
   else
     git show-ref --quiet --verify "refs/remotes/$remote/paravendor" || return 1
     git checkout --quiet -b paravendor "$remote/paravendor"
-    git show paravendor
+    git checkout "$branch"
   fi
 }
 

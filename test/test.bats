@@ -60,6 +60,8 @@ teardown() {
   cd "$tmpdir1"
   run git paravendor list
   assert_line "$TOPDIR"
+  run git rev-parse --abbrev-ref HEAD
+  assert_output "master"
 } 
 
 
