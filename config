@@ -1,5 +1,1175 @@
 version = "1.1"
 
+[dependencies.bats-core]
+url = "https://github.com/bats-core/bats-core.git"
+
+[dependencies.bats-core.heads.HEAD]
+commit = "4417a96cfc5e4afc493df94eeef8af4eec760163"
+
+[dependencies.bats-core.heads."refs/heads/add-examples"]
+commit = "ec75bea9568b5ddc8139925a071b0c9d1c953a33"
+
+[dependencies.bats-core.heads."refs/heads/feature/junit_output"]
+commit = "bad21f6c24af996e423d5145b3adcf3793bdec92"
+
+[dependencies.bats-core.heads."refs/heads/junit_output_bak"]
+commit = "f4924da4fd334ebe74554ba26fd79331b920112a"
+
+[dependencies.bats-core.heads."refs/heads/master"]
+commit = "4417a96cfc5e4afc493df94eeef8af4eec760163"
+
+[dependencies.bats-core.heads."refs/heads/version/1.6.x"]
+commit = "1977254c2a7faa2e0af17355856f91dc471d1daa"
+
+[dependencies.bats-core.heads."refs/pull/10/head"]
+commit = "0f6dde530ee41c36dcb32341ca41af49fb00ad7d"
+
+[dependencies.bats-core.heads."refs/pull/100/head"]
+commit = "d1a16d2379af036975650e7c4a0b0a64caf29e09"
+
+[dependencies.bats-core.heads."refs/pull/101/head"]
+commit = "d4dfe08e32bfb45e37f4e8320f7763244336fe9f"
+
+[dependencies.bats-core.heads."refs/pull/102/head"]
+commit = "a2bfa83e02cfc9e20e6ddeec1bc0b9aadbfc4502"
+
+[dependencies.bats-core.heads."refs/pull/104/head"]
+commit = "92de590cfcfada561c82d70017f2b73424545da7"
+
+[dependencies.bats-core.heads."refs/pull/105/head"]
+commit = "030f7d5802ba0b9d4c7f9b8cb4ef34caeaa5050a"
+
+[dependencies.bats-core.heads."refs/pull/108/head"]
+commit = "7f932b714cf7b4bd78ac2ed719700b11eb956a3b"
+
+[dependencies.bats-core.heads."refs/pull/108/merge"]
+commit = "da978b39a3698eebb6a15a465e4637647fdb35a1"
+
+[dependencies.bats-core.heads."refs/pull/109/head"]
+commit = "a8fa5f677720ecf1d862090c89f286e99dad89a8"
+
+[dependencies.bats-core.heads."refs/pull/110/head"]
+commit = "a44f9ae348ec0c0187a925fc06f6a06f84324d1b"
+
+[dependencies.bats-core.heads."refs/pull/111/head"]
+commit = "e8e91dfc3525ef57f429dcc22023854c3176ecf3"
+
+[dependencies.bats-core.heads."refs/pull/114/head"]
+commit = "e9829a267a33d7aff3ef1934bd686ac60ef02027"
+
+[dependencies.bats-core.heads."refs/pull/115/head"]
+commit = "642423bbf12c1eeb80a2c693081b4a2a79ca6b84"
+
+[dependencies.bats-core.heads."refs/pull/116/head"]
+commit = "49ddc6269234879cd1533fce1181a2478c5c6273"
+
+[dependencies.bats-core.heads."refs/pull/117/head"]
+commit = "1f13ef65b6d62d7d106bf3ffb2a7da4b0384b286"
+
+[dependencies.bats-core.heads."refs/pull/118/head"]
+commit = "0eb459aee07267d326375415dac40ec04c8bb855"
+
+[dependencies.bats-core.heads."refs/pull/119/head"]
+commit = "e8a20d9e7873d84638e840f6037505f45e6e2b83"
+
+[dependencies.bats-core.heads."refs/pull/120/head"]
+commit = "255adf75e268cc3b2d57537a8ff40e89e60bb7b8"
+
+[dependencies.bats-core.heads."refs/pull/122/head"]
+commit = "cda572bb7bb9c6b7cf880ea31355f5a7f1a61b64"
+
+[dependencies.bats-core.heads."refs/pull/123/head"]
+commit = "a74a2381ab582b576da318dcafbda07f982452ee"
+
+[dependencies.bats-core.heads."refs/pull/124/head"]
+commit = "c0d45450880a55bc2c81dc1248109bb9f4881356"
+
+[dependencies.bats-core.heads."refs/pull/126/head"]
+commit = "7d69e095df597024981a1a0c0ac743bf57fa5dae"
+
+[dependencies.bats-core.heads."refs/pull/127/head"]
+commit = "2875c44311d84dad9d065323a71047301e72fb15"
+
+[dependencies.bats-core.heads."refs/pull/128/head"]
+commit = "7a6ceeeb48604889219713fd831abf0f2d9e61c5"
+
+[dependencies.bats-core.heads."refs/pull/128/merge"]
+commit = "6aaeda4a352a9f08349c2192f1405fbb347b8714"
+
+[dependencies.bats-core.heads."refs/pull/129/head"]
+commit = "d709e8008618035cffc2b669e88bc07c135d1761"
+
+[dependencies.bats-core.heads."refs/pull/130/head"]
+commit = "76f32b2c59b7dfeb1515482282396b209d95daae"
+
+[dependencies.bats-core.heads."refs/pull/134/head"]
+commit = "f196b84bedde707f220e1b2e4e4d37ce495b065e"
+
+[dependencies.bats-core.heads."refs/pull/137/head"]
+commit = "7f20e38e0bbdfb1717c0b041ab48bc75ca451b11"
+
+[dependencies.bats-core.heads."refs/pull/138/head"]
+commit = "e60779f08566a3698450d92b92f5f03183d9999b"
+
+[dependencies.bats-core.heads."refs/pull/140/head"]
+commit = "310b9825639bc7fb96539ee9cac3365cae108425"
+
+[dependencies.bats-core.heads."refs/pull/143/head"]
+commit = "9b2a1d3d1d6332ccce295ade8d26b476cd8f1ffa"
+
+[dependencies.bats-core.heads."refs/pull/146/head"]
+commit = "c5e2404dde9b15b73c510d20bc657800bdec9c0b"
+
+[dependencies.bats-core.heads."refs/pull/152/head"]
+commit = "48c7f3faa3666370106191251c89e29a55e877ac"
+
+[dependencies.bats-core.heads."refs/pull/153/head"]
+commit = "723a1fa83524f7e2b120eddd2ca5358ca5706b4f"
+
+[dependencies.bats-core.heads."refs/pull/158/head"]
+commit = "14e8b32cd2340e6668ce204b185409488b3d135e"
+
+[dependencies.bats-core.heads."refs/pull/159/head"]
+commit = "9007eece4c14c6498ea7a53210b71d9942428d56"
+
+[dependencies.bats-core.heads."refs/pull/165/head"]
+commit = "c60bf1280b430f1a5c36dcd5cc0e1559cad67f14"
+
+[dependencies.bats-core.heads."refs/pull/169/head"]
+commit = "98bb5f2d30caac03230044f0837f58f11897ce13"
+
+[dependencies.bats-core.heads."refs/pull/17/head"]
+commit = "f953d774b73a0c89528047a1118a907986637496"
+
+[dependencies.bats-core.heads."refs/pull/172/head"]
+commit = "7e6dd94cf82ca219e6dfc6a876146bdbc1164457"
+
+[dependencies.bats-core.heads."refs/pull/177/head"]
+commit = "3681376b1a9135504c49c0a7a3fc2a47b725daa9"
+
+[dependencies.bats-core.heads."refs/pull/178/head"]
+commit = "77e493355a4ed8eee3edd2f3583866ef0280861d"
+
+[dependencies.bats-core.heads."refs/pull/179/head"]
+commit = "d3c985ea4d70456191a14b19c8381dbdd1b22337"
+
+[dependencies.bats-core.heads."refs/pull/180/head"]
+commit = "e4312a908f0899b563ca1597eb179ca7c0932ee4"
+
+[dependencies.bats-core.heads."refs/pull/181/head"]
+commit = "927c494d253cba9b485bf5529c2c7cc797b5c416"
+
+[dependencies.bats-core.heads."refs/pull/183/head"]
+commit = "04ff588ad3ecc397c9a8cd37287ef670754f0874"
+
+[dependencies.bats-core.heads."refs/pull/185/head"]
+commit = "0da0054f16f748176e7badb1af881c5c188fee57"
+
+[dependencies.bats-core.heads."refs/pull/19/head"]
+commit = "eed991303b63287c0d75d7cc4d21fd994cd37a40"
+
+[dependencies.bats-core.heads."refs/pull/191/head"]
+commit = "8c5e6d068525d7ebeea006a23bb48a3c4b52687c"
+
+[dependencies.bats-core.heads."refs/pull/196/head"]
+commit = "db06e1f5184cd3f70060a52546eb90551d739b8f"
+
+[dependencies.bats-core.heads."refs/pull/196/merge"]
+commit = "7dbd62af928613c52deebfd70db733ce6dd12786"
+
+[dependencies.bats-core.heads."refs/pull/2/head"]
+commit = "3005f2859e47f4f68b2db253670175d8db14a539"
+
+[dependencies.bats-core.heads."refs/pull/203/head"]
+commit = "15686b3e4cbcc00dd589e4a87e42975a0501e1f8"
+
+[dependencies.bats-core.heads."refs/pull/208/head"]
+commit = "6252f62ee485a1089bd54f27d5c7200961f504f9"
+
+[dependencies.bats-core.heads."refs/pull/21/head"]
+commit = "9b0647a16b2c0e63a884f9bd1bca7f5f1fda183a"
+
+[dependencies.bats-core.heads."refs/pull/214/head"]
+commit = "f3a08d5d004d34afb2df4d79f923d241b8c9c462"
+
+[dependencies.bats-core.heads."refs/pull/215/head"]
+commit = "d3e6e3091f59cedf15b627abf6977a502704b692"
+
+[dependencies.bats-core.heads."refs/pull/216/head"]
+commit = "f2ca4a25e5d1fd7499556414493713c8a9b48eb8"
+
+[dependencies.bats-core.heads."refs/pull/217/head"]
+commit = "c7ab310e6a6e083bb5a292476137240b5da0833e"
+
+[dependencies.bats-core.heads."refs/pull/219/head"]
+commit = "d9d2b1d50753b4e9e1c4c24efa1326e0deea6851"
+
+[dependencies.bats-core.heads."refs/pull/221/head"]
+commit = "6fddb9a3cdf6407a1de8d253cd3740e05a44f68b"
+
+[dependencies.bats-core.heads."refs/pull/227/head"]
+commit = "bcce61189e9f19651ab60e7bf7143e496c98dc58"
+
+[dependencies.bats-core.heads."refs/pull/229/head"]
+commit = "02e934b8db8d52ba73d661eaf3677f08ef9b37d3"
+
+[dependencies.bats-core.heads."refs/pull/23/head"]
+commit = "15fd8988e30e26ca7140f493d89be380e9cc9a95"
+
+[dependencies.bats-core.heads."refs/pull/232/head"]
+commit = "d7e1aa95449fcbb261fe27ca8c8308e536fdaa52"
+
+[dependencies.bats-core.heads."refs/pull/236/head"]
+commit = "0e11e7a3b3e061721fcd19c04232a64522128265"
+
+[dependencies.bats-core.heads."refs/pull/237/head"]
+commit = "0ae136100b7c4f25cfe380498e47a68cacfd746d"
+
+[dependencies.bats-core.heads."refs/pull/238/head"]
+commit = "07bbad5d66000d9dc1822a9cf9277968fbabc74c"
+
+[dependencies.bats-core.heads."refs/pull/239/head"]
+commit = "020fdbe0a6b5a61a30da8a7769b89f340d14f2fb"
+
+[dependencies.bats-core.heads."refs/pull/24/head"]
+commit = "e5695a673faad4d4d33446ed5c99d70dbfa6d8be"
+
+[dependencies.bats-core.heads."refs/pull/242/head"]
+commit = "118391d8ea542be5ad530eec2f40efa751925375"
+
+[dependencies.bats-core.heads."refs/pull/243/head"]
+commit = "b6ce391e74aea06924224b8ee2253c80e348a41c"
+
+[dependencies.bats-core.heads."refs/pull/244/head"]
+commit = "10b0daf53a888044b3f7b9de3581d58fe436ec9f"
+
+[dependencies.bats-core.heads."refs/pull/246/head"]
+commit = "ff630de57b072fde56b67c67443cd6e1a37f9413"
+
+[dependencies.bats-core.heads."refs/pull/247/head"]
+commit = "6e37fe518bbb0f565e40742915dff4bb0f1bb19f"
+
+[dependencies.bats-core.heads."refs/pull/255/head"]
+commit = "3a1c2f28be260f8687ff83183cef4963faabedd6"
+
+[dependencies.bats-core.heads."refs/pull/26/head"]
+commit = "bc34bcafe5dfb5e2abc94c9ba6455ebb99be5c08"
+
+[dependencies.bats-core.heads."refs/pull/260/head"]
+commit = "387a4fdfadc0321c4fe5328c48b539fd6a11f88e"
+
+[dependencies.bats-core.heads."refs/pull/261/head"]
+commit = "0dd39846ecd710724362af7a090a0eabf266b316"
+
+[dependencies.bats-core.heads."refs/pull/263/head"]
+commit = "a99468497b93224b79de735d0ccdb38ed9de6899"
+
+[dependencies.bats-core.heads."refs/pull/27/head"]
+commit = "7ea88ad3f88a95fad5ca18bfb22ba15d88a4534a"
+
+[dependencies.bats-core.heads."refs/pull/270/head"]
+commit = "5ad582ffa20c6611f92575ccaf7f789a98ce4f21"
+
+[dependencies.bats-core.heads."refs/pull/271/head"]
+commit = "d8a849cbac239225475dbe45600f71899193e6a3"
+
+[dependencies.bats-core.heads."refs/pull/272/head"]
+commit = "18acb997e4d115b57ebf32048f9e47ea48018b45"
+
+[dependencies.bats-core.heads."refs/pull/274/head"]
+commit = "034443da0ab56bacc8de3a4b880b50400e152a50"
+
+[dependencies.bats-core.heads."refs/pull/275/head"]
+commit = "0e9951fb4a320d2ac4270ece5c79528a499a08c1"
+
+[dependencies.bats-core.heads."refs/pull/275/merge"]
+commit = "3d8bb296a64d8f4c49d1e749a2bceeb3bc3c13e3"
+
+[dependencies.bats-core.heads."refs/pull/279/head"]
+commit = "464283553cb248b2c01d3abb1cf5bb01d29804db"
+
+[dependencies.bats-core.heads."refs/pull/282/head"]
+commit = "add6cd2949a0f89968abae3e3ad95060ecd8678f"
+
+[dependencies.bats-core.heads."refs/pull/284/head"]
+commit = "a83eb75f5e0cb24f3b3673f0563c2976a1a4974e"
+
+[dependencies.bats-core.heads."refs/pull/286/head"]
+commit = "3f97f64d871fa80cfda9747ef6867b99fe9271fd"
+
+[dependencies.bats-core.heads."refs/pull/287/head"]
+commit = "f27b03f3aaf857391ee671b9ffa35255f2a2b997"
+
+[dependencies.bats-core.heads."refs/pull/288/head"]
+commit = "f5982a91ece9e2acb354b85bf303edddb4c63bc3"
+
+[dependencies.bats-core.heads."refs/pull/289/head"]
+commit = "b0fd87014ff15a8deaa850766adce249cae9f460"
+
+[dependencies.bats-core.heads."refs/pull/29/head"]
+commit = "1b3c85a61ed715a7e2694564a70a0c3ad51dd0a2"
+
+[dependencies.bats-core.heads."refs/pull/291/head"]
+commit = "220bb9d12c5ba50a05bdd8894017c7092ec25a7d"
+
+[dependencies.bats-core.heads."refs/pull/294/head"]
+commit = "71acc648bc2b4ad982a815a0226fe1bbd245ae51"
+
+[dependencies.bats-core.heads."refs/pull/295/head"]
+commit = "338226aad7c2af83e5e116bfc0acef8cf905be5f"
+
+[dependencies.bats-core.heads."refs/pull/296/head"]
+commit = "338226aad7c2af83e5e116bfc0acef8cf905be5f"
+
+[dependencies.bats-core.heads."refs/pull/297/head"]
+commit = "0deffccf9c501f5627731acd93bbd776c8c8e292"
+
+[dependencies.bats-core.heads."refs/pull/298/head"]
+commit = "c7508772b11591773dea7f808537c04d42913b75"
+
+[dependencies.bats-core.heads."refs/pull/300/head"]
+commit = "0525b2a4f0f37a7c8103431be22a7705d9d9100a"
+
+[dependencies.bats-core.heads."refs/pull/301/head"]
+commit = "ca4730718c8cd42cd69361dcb36ff27d6517b084"
+
+[dependencies.bats-core.heads."refs/pull/302/head"]
+commit = "3e9fd9d31d4789b8cc73d15d15ad8210f3f20846"
+
+[dependencies.bats-core.heads."refs/pull/304/head"]
+commit = "0b57bca66dadeb5bf76d70cb033279b0ff85b775"
+
+[dependencies.bats-core.heads."refs/pull/309/head"]
+commit = "ca3bd24e3f837a3cd75774cff4d6b9a94749766e"
+
+[dependencies.bats-core.heads."refs/pull/310/head"]
+commit = "aeeb0901042db4020fd206debdfd860f2a5de719"
+
+[dependencies.bats-core.heads."refs/pull/312/head"]
+commit = "13bf84bf396cc33536d1df1a6352712d031ea4ca"
+
+[dependencies.bats-core.heads."refs/pull/317/head"]
+commit = "f5b4fd11bcf95c1cfe2ba84ed8b0f62fe8fad655"
+
+[dependencies.bats-core.heads."refs/pull/32/head"]
+commit = "062160105638ebb101d867d1e9de160b00977e35"
+
+[dependencies.bats-core.heads."refs/pull/321/head"]
+commit = "84cbcd79c854e9db5e176c94407e208fe38c863f"
+
+[dependencies.bats-core.heads."refs/pull/324/head"]
+commit = "988d96523a4162a1b43e07354f83934dbccbbc79"
+
+[dependencies.bats-core.heads."refs/pull/326/head"]
+commit = "205795f9627c7661c3e54df5aa5a2c6a057c2934"
+
+[dependencies.bats-core.heads."refs/pull/33/head"]
+commit = "e14db70f3b2321dcbf8a3de4c5344e1c083b4149"
+
+[dependencies.bats-core.heads."refs/pull/331/head"]
+commit = "b7e0923c0c447da6c68d0ef41efae74cdca8df8f"
+
+[dependencies.bats-core.heads."refs/pull/332/head"]
+commit = "fde4ab0099045846e88f9c070e377ee5343a0590"
+
+[dependencies.bats-core.heads."refs/pull/333/head"]
+commit = "46a82dac037e421e0921ee4e857f1501d3dc69b0"
+
+[dependencies.bats-core.heads."refs/pull/334/head"]
+commit = "9f1e042af8ca39392987e2e2239d2c45f54ad988"
+
+[dependencies.bats-core.heads."refs/pull/335/head"]
+commit = "a9a86484555ba096164201f32c3cf4ad971095ea"
+
+[dependencies.bats-core.heads."refs/pull/337/head"]
+commit = "126a09484c8aaa1e314b939162cff30254e0b707"
+
+[dependencies.bats-core.heads."refs/pull/338/head"]
+commit = "e57a7e0f76f35553fe177683ee57db6f61826d30"
+
+[dependencies.bats-core.heads."refs/pull/339/head"]
+commit = "9a8a6ce4b49f348339d1740c7227e098902b99d4"
+
+[dependencies.bats-core.heads."refs/pull/34/head"]
+commit = "4371e6cdb97ba298be3c23ed4a0370042d5b3471"
+
+[dependencies.bats-core.heads."refs/pull/34/merge"]
+commit = "b3516173c138b616aa16c3c381df7d1706399f9f"
+
+[dependencies.bats-core.heads."refs/pull/343/head"]
+commit = "71086e6903f67e1c77887f85fcaefb237165a43a"
+
+[dependencies.bats-core.heads."refs/pull/344/head"]
+commit = "9b2b659e5ba769752c0d00dadb3ad9b58f59cbaa"
+
+[dependencies.bats-core.heads."refs/pull/345/head"]
+commit = "140d43c45db1b850df59132a30310de88b6a9432"
+
+[dependencies.bats-core.heads."refs/pull/346/head"]
+commit = "2578ce60397e3f4ce9d81d2781bbf37a1915475e"
+
+[dependencies.bats-core.heads."refs/pull/348/head"]
+commit = "9f8e33a98b14c7c925755750bb9dae18776bd78a"
+
+[dependencies.bats-core.heads."refs/pull/349/head"]
+commit = "f1c03613cfe32e3670a333efd4e3d061b3028769"
+
+[dependencies.bats-core.heads."refs/pull/349/merge"]
+commit = "5bc54c8fe03d93b1eca142c03511dbf13ea11127"
+
+[dependencies.bats-core.heads."refs/pull/35/head"]
+commit = "c5ff0c7c3d231d79a27f93d3c094aad85dccb162"
+
+[dependencies.bats-core.heads."refs/pull/352/head"]
+commit = "05a1e7fade9c4faa39ccb6945b089540d7b20c61"
+
+[dependencies.bats-core.heads."refs/pull/354/head"]
+commit = "a26c702cc281a672e4c6485b534633e6ed014c65"
+
+[dependencies.bats-core.heads."refs/pull/361/head"]
+commit = "033c5033e79bac8253ef178cfca108d76cfa1e10"
+
+[dependencies.bats-core.heads."refs/pull/363/head"]
+commit = "7ba8c6476cac3a534cd884a855b1160fb3ac7534"
+
+[dependencies.bats-core.heads."refs/pull/365/head"]
+commit = "fd561c8bd9b20d53f3adde68859c2490d30427e9"
+
+[dependencies.bats-core.heads."refs/pull/366/head"]
+commit = "70dc56f6a3b57cb27792ef81db8d7a466948320f"
+
+[dependencies.bats-core.heads."refs/pull/367/head"]
+commit = "066d27174ecce84c1ab6f0b3b56d9c5f980781b7"
+
+[dependencies.bats-core.heads."refs/pull/368/head"]
+commit = "ba666441b954e0cf97ee894444858f26ab83905f"
+
+[dependencies.bats-core.heads."refs/pull/369/head"]
+commit = "b8fe24c75c1c1b7391bab6117c9e9fd5cfa9d55a"
+
+[dependencies.bats-core.heads."refs/pull/37/head"]
+commit = "830a0c4e7eb4ecf94791b02c36fd0624c5f27135"
+
+[dependencies.bats-core.heads."refs/pull/370/head"]
+commit = "93c7c831f600513f19ac60236f36ae5890c1110b"
+
+[dependencies.bats-core.heads."refs/pull/376/head"]
+commit = "43c1c024101b7f6e7a09e553633c726f007b3767"
+
+[dependencies.bats-core.heads."refs/pull/378/head"]
+commit = "2aa82d436b2fb92b19c7f48b92bd118c3bc2657d"
+
+[dependencies.bats-core.heads."refs/pull/38/head"]
+commit = "035b6bc4c0c30348648c1a88bc8e4399ea48bf43"
+
+[dependencies.bats-core.heads."refs/pull/384/head"]
+commit = "712e08414defa07abe4666fb982225eceb4ebbd9"
+
+[dependencies.bats-core.heads."refs/pull/386/head"]
+commit = "3f3c6d98429fe4f0ea27b0b4cfe3954663428ad3"
+
+[dependencies.bats-core.heads."refs/pull/387/head"]
+commit = "7baa0dcc084c3aa3b70e1111ecec38502a2a10b3"
+
+[dependencies.bats-core.heads."refs/pull/389/head"]
+commit = "a985808284c0c3fc23b65179b22801846a5de3c5"
+
+[dependencies.bats-core.heads."refs/pull/392/head"]
+commit = "5a8f610157e7132ea513a2f6fd45dc259063320e"
+
+[dependencies.bats-core.heads."refs/pull/394/head"]
+commit = "f1a1ffba0a51fa1d3e56fdba7155b5153d38181e"
+
+[dependencies.bats-core.heads."refs/pull/395/head"]
+commit = "6c2d7085878598961da83d98aea5495757f1b827"
+
+[dependencies.bats-core.heads."refs/pull/397/head"]
+commit = "c094e68f7070ce3c648fa6d09d370682c0847cb2"
+
+[dependencies.bats-core.heads."refs/pull/40/head"]
+commit = "47b314a8605097415b17e446053f5a08a34d6402"
+
+[dependencies.bats-core.heads."refs/pull/40/merge"]
+commit = "936792c3d27c9987e226dba0fc69c8ab5b8d71ca"
+
+[dependencies.bats-core.heads."refs/pull/400/head"]
+commit = "cf1c853f140e6be549038c7147fe731e06ff0218"
+
+[dependencies.bats-core.heads."refs/pull/403/head"]
+commit = "9086c47854652f2731861b40385689c85f12103f"
+
+[dependencies.bats-core.heads."refs/pull/405/head"]
+commit = "1e12a8015b5dc6d86e588d9bf33bd630c6a6e4ec"
+
+[dependencies.bats-core.heads."refs/pull/406/head"]
+commit = "ec4f12f326a2d06b11fdd0369ed5a826f90615f2"
+
+[dependencies.bats-core.heads."refs/pull/407/head"]
+commit = "78e1677200812a9293e86dbd5292539aebe7e300"
+
+[dependencies.bats-core.heads."refs/pull/409/head"]
+commit = "8f246d0008642f845b7d6283e619902d26cb9189"
+
+[dependencies.bats-core.heads."refs/pull/410/head"]
+commit = "ed0bb5cb0376f60a16a37fec07dc933791933d97"
+
+[dependencies.bats-core.heads."refs/pull/412/head"]
+commit = "f5854d051568753af8adcac899994194814e8f45"
+
+[dependencies.bats-core.heads."refs/pull/413/head"]
+commit = "f3732b48ce788b4c742c27cc4df57765286a409d"
+
+[dependencies.bats-core.heads."refs/pull/416/head"]
+commit = "f3b3368d0553b79091289873520454a3778e59ef"
+
+[dependencies.bats-core.heads."refs/pull/42/head"]
+commit = "b31c1cff8a275b0db7ea332033881bf4f1dd7b42"
+
+[dependencies.bats-core.heads."refs/pull/422/head"]
+commit = "f0e39a1b0d325f208e09f381912ab9f2858d0739"
+
+[dependencies.bats-core.heads."refs/pull/426/head"]
+commit = "9b072039465bda7d5e4557abe096e4c4be411b69"
+
+[dependencies.bats-core.heads."refs/pull/427/head"]
+commit = "37cd41c4e349885d59407c063181aeaffc401247"
+
+[dependencies.bats-core.heads."refs/pull/427/merge"]
+commit = "c07572823b84d5175b3db06a300c095746cccb34"
+
+[dependencies.bats-core.heads."refs/pull/429/head"]
+commit = "8001dc6d2009908a49cee3af2b4d7dd880eca2be"
+
+[dependencies.bats-core.heads."refs/pull/430/head"]
+commit = "e43f657fa4e22c4a66e86bafe73b84fb55b66b21"
+
+[dependencies.bats-core.heads."refs/pull/431/head"]
+commit = "3d42bc17f9211df974b50695fc7511c06e287c8b"
+
+[dependencies.bats-core.heads."refs/pull/434/head"]
+commit = "804fd32e2c95613c63886c3652bfba540df909cf"
+
+[dependencies.bats-core.heads."refs/pull/435/head"]
+commit = "3ebc0aed87df163bcef0543c87b3d37d07a4bf8c"
+
+[dependencies.bats-core.heads."refs/pull/438/head"]
+commit = "c6f32799745ad37e309fc8f4e0c1d5950af7ca22"
+
+[dependencies.bats-core.heads."refs/pull/439/head"]
+commit = "fbcfaece5b0774a1b960b0bd11c538c2fd8911e4"
+
+[dependencies.bats-core.heads."refs/pull/440/head"]
+commit = "b40f10a39f7faecdec7bd7dc512d37e69b1af770"
+
+[dependencies.bats-core.heads."refs/pull/441/head"]
+commit = "13057134049aebe3244df01db6bbc110d1a66d7c"
+
+[dependencies.bats-core.heads."refs/pull/442/head"]
+commit = "1aedb11e40230307cfffece9d486180990cb863b"
+
+[dependencies.bats-core.heads."refs/pull/444/head"]
+commit = "565f2863288331684cf5b03560b26151a09ea810"
+
+[dependencies.bats-core.heads."refs/pull/445/head"]
+commit = "a44c5ff7aa04f0fc98df884a245e4ca2af5930c8"
+
+[dependencies.bats-core.heads."refs/pull/447/head"]
+commit = "951a3714b35be3320e6d50b4867340b9f848f661"
+
+[dependencies.bats-core.heads."refs/pull/452/head"]
+commit = "74a4beea5a09c72b81cc0c4309366aa88ff41c24"
+
+[dependencies.bats-core.heads."refs/pull/455/head"]
+commit = "c058d0f2bb812bf6cc2177cec8dad1be01c9cd28"
+
+[dependencies.bats-core.heads."refs/pull/459/head"]
+commit = "b6a506c14c1c10d3d66bfeefa19823bb299f992a"
+
+[dependencies.bats-core.heads."refs/pull/46/head"]
+commit = "3754d158f8bc17c895a39bf67acb8aada3afc755"
+
+[dependencies.bats-core.heads."refs/pull/46/merge"]
+commit = "380a92288088a9f76372a4a930bd1c0384a50f50"
+
+[dependencies.bats-core.heads."refs/pull/463/head"]
+commit = "2e0fe49b48ec83d77f7794de918e2b3fa213bc41"
+
+[dependencies.bats-core.heads."refs/pull/464/head"]
+commit = "81331447fad39a7f59de212cc9d5fc63df76d686"
+
+[dependencies.bats-core.heads."refs/pull/465/head"]
+commit = "4bb8983d9df26bf75edc142ca85b54b9ec9ffb3f"
+
+[dependencies.bats-core.heads."refs/pull/467/head"]
+commit = "5ea4160db7eed8d5d0ab2cf5fa8b3093ed4ae74a"
+
+[dependencies.bats-core.heads."refs/pull/469/head"]
+commit = "11f10a90f3487a400b0bdbec15f538778376d357"
+
+[dependencies.bats-core.heads."refs/pull/472/head"]
+commit = "22650db19661567077dcb2efabb615c426ad289a"
+
+[dependencies.bats-core.heads."refs/pull/473/head"]
+commit = "6fd87ab91205a7ac0f18f69b86dfbeb26b2afec3"
+
+[dependencies.bats-core.heads."refs/pull/474/head"]
+commit = "b4f7c1635bfddf4fd70f7d5d2efc38300e3bb504"
+
+[dependencies.bats-core.heads."refs/pull/476/head"]
+commit = "0827c42b19ec201a5eed20f4779a31b2ab9ca807"
+
+[dependencies.bats-core.heads."refs/pull/477/head"]
+commit = "90582d9b03d25e9fe435cea932e37e0088bd2e98"
+
+[dependencies.bats-core.heads."refs/pull/478/head"]
+commit = "ac1019a5a9a0d5e71f86013a0cb1be306489d70f"
+
+[dependencies.bats-core.heads."refs/pull/48/head"]
+commit = "da430f750cc2286fda8597bcb449668e3aa97ac1"
+
+[dependencies.bats-core.heads."refs/pull/481/head"]
+commit = "477a0be656c4bdfb21f85067758da0cf29fca94d"
+
+[dependencies.bats-core.heads."refs/pull/482/head"]
+commit = "8d886786727a7f4abf8cb836587d5ecb8de1d58f"
+
+[dependencies.bats-core.heads."refs/pull/483/head"]
+commit = "97c8df4ec9c979283bc507b67a50f23c52850e37"
+
+[dependencies.bats-core.heads."refs/pull/484/head"]
+commit = "719b9fb47a9baf05372c8d3eb6b2841747be4566"
+
+[dependencies.bats-core.heads."refs/pull/485/head"]
+commit = "f7680f7e4947b7206b683f02b7292cb3ae5d0700"
+
+[dependencies.bats-core.heads."refs/pull/487/head"]
+commit = "20dbe2187a2159c8644ed996abdbb1910c62c24e"
+
+[dependencies.bats-core.heads."refs/pull/487/merge"]
+commit = "0f32b99dfa2159efa67f6d904644a4142a018a67"
+
+[dependencies.bats-core.heads."refs/pull/488/head"]
+commit = "cce9e7463d0cd763c33a4219f6dc8abafbbfee0b"
+
+[dependencies.bats-core.heads."refs/pull/491/head"]
+commit = "d15d67d2d1a9cd23c0035417b0bcc52fcdf36594"
+
+[dependencies.bats-core.heads."refs/pull/495/head"]
+commit = "9f2e547a3f7e41a20864eb6f9760aaad595aae9a"
+
+[dependencies.bats-core.heads."refs/pull/496/head"]
+commit = "28c6c95ee643caea765a2332d44bd6d9290e518e"
+
+[dependencies.bats-core.heads."refs/pull/498/head"]
+commit = "a69f3e329305c69f7d345a7e0af8dfa46c0cb8ee"
+
+[dependencies.bats-core.heads."refs/pull/50/head"]
+commit = "b3522eced3a9d88ef685499be906e066d29ed9da"
+
+[dependencies.bats-core.heads."refs/pull/501/head"]
+commit = "bb8925f920b53ce0657586d77e619dcd95077d55"
+
+[dependencies.bats-core.heads."refs/pull/503/head"]
+commit = "82006118b3d463a9104e1bce455495d79facc778"
+
+[dependencies.bats-core.heads."refs/pull/506/head"]
+commit = "58d712431d1cfe7c2a60ca63f851d3b5a3d36ea9"
+
+[dependencies.bats-core.heads."refs/pull/507/head"]
+commit = "f69c26da92a4a89a47f679ef4522425bb68d93a1"
+
+[dependencies.bats-core.heads."refs/pull/51/head"]
+commit = "45f8ddfb6e99deb504b40c1643b92d47e01361b0"
+
+[dependencies.bats-core.heads."refs/pull/51/merge"]
+commit = "6d8206b2f8e4b08ca26d638a140b906f18995d31"
+
+[dependencies.bats-core.heads."refs/pull/515/head"]
+commit = "6c34a39bd9246adfecce3f19745c78a4e64862b4"
+
+[dependencies.bats-core.heads."refs/pull/516/head"]
+commit = "3faa30aea56d063d8038d83b9404cbb011e35134"
+
+[dependencies.bats-core.heads."refs/pull/520/head"]
+commit = "0efcbd65b79bfc5ca7187e2634e8f23c61cf77c9"
+
+[dependencies.bats-core.heads."refs/pull/522/head"]
+commit = "47447f18089d59c0544533a4bf8429c46f2e5c2f"
+
+[dependencies.bats-core.heads."refs/pull/523/head"]
+commit = "6e61148fce9f9cad92d96d0295eb559d587ba465"
+
+[dependencies.bats-core.heads."refs/pull/525/head"]
+commit = "846d1fe11cfcdf8ce447712b28633ac579cc7618"
+
+[dependencies.bats-core.heads."refs/pull/532/head"]
+commit = "d1b18df477ed2dd6b827f0b6f89356853f034985"
+
+[dependencies.bats-core.heads."refs/pull/534/head"]
+commit = "aa946f6c9b298c37e71b59712d8905c721cc9abe"
+
+[dependencies.bats-core.heads."refs/pull/535/head"]
+commit = "7989eff598fe0bc21dfd8a57a9743eebc395d754"
+
+[dependencies.bats-core.heads."refs/pull/536/head"]
+commit = "b6ead53cf8d4eb56c771d3a6e3985f997d982e45"
+
+[dependencies.bats-core.heads."refs/pull/536/merge"]
+commit = "ca3ffe2dd14cc7b97b1fa1a0559d73d90fc15b62"
+
+[dependencies.bats-core.heads."refs/pull/537/head"]
+commit = "bfec03270ed3ecdf8d0c9b74129828738f48d7fe"
+
+[dependencies.bats-core.heads."refs/pull/54/head"]
+commit = "3e65b4337421dae75dfbcea81291102df3a460ad"
+
+[dependencies.bats-core.heads."refs/pull/545/head"]
+commit = "30995e1939c8eef18cb77b7810aa5eee837c9b18"
+
+[dependencies.bats-core.heads."refs/pull/548/head"]
+commit = "bab6766c6f40f3e16eb7beed1a8dbbf25073daf5"
+
+[dependencies.bats-core.heads."refs/pull/55/head"]
+commit = "44ebb5e1a81e285d2cffab50e07e68490e7c209a"
+
+[dependencies.bats-core.heads."refs/pull/55/merge"]
+commit = "8e7d6f708cd2018de22c5563899afa711e8e42af"
+
+[dependencies.bats-core.heads."refs/pull/550/head"]
+commit = "84f2e150cf4300159ce686f8f8c33cd79418702a"
+
+[dependencies.bats-core.heads."refs/pull/554/head"]
+commit = "a022667b91510d27306e54dfef55d5239f6a3a1f"
+
+[dependencies.bats-core.heads."refs/pull/557/head"]
+commit = "81da8006ed1515b35a487ef21e6b14ad06346b3b"
+
+[dependencies.bats-core.heads."refs/pull/558/head"]
+commit = "53d28f8af41062506c87c58d3adb15bb75208b33"
+
+[dependencies.bats-core.heads."refs/pull/559/head"]
+commit = "38ba7a7dfbb58ba512c7938b7568a3c44e2a120c"
+
+[dependencies.bats-core.heads."refs/pull/56/head"]
+commit = "8e5c68e95752969919c88b272cb9a01b67cb97ab"
+
+[dependencies.bats-core.heads."refs/pull/56/merge"]
+commit = "f482020aa2eedfac3b5a5b2772f3f1cb04d977be"
+
+[dependencies.bats-core.heads."refs/pull/560/head"]
+commit = "1c7a85b24d8b3731189881987ef62d1085062a96"
+
+[dependencies.bats-core.heads."refs/pull/561/head"]
+commit = "fb1d5c50873370e603fd09d47181bac37ee61bc8"
+
+[dependencies.bats-core.heads."refs/pull/567/head"]
+commit = "03612552b69fc0a878d5bf515c36aecddedf11b7"
+
+[dependencies.bats-core.heads."refs/pull/568/head"]
+commit = "4783f26ea7b799d19b10471bd54f706642a9dd43"
+
+[dependencies.bats-core.heads."refs/pull/57/head"]
+commit = "6c80cef57cd6f66aab47dc6c2b63ddac26d15b6a"
+
+[dependencies.bats-core.heads."refs/pull/571/head"]
+commit = "4509cf7feb9b3b9a4ecbaca3fae58ed3c5694602"
+
+[dependencies.bats-core.heads."refs/pull/574/head"]
+commit = "885c2c17e74f8757e005459fa17ff01e9331fa10"
+
+[dependencies.bats-core.heads."refs/pull/579/head"]
+commit = "f1647fb1d9b581128302bbb60b21ca3e92b4472b"
+
+[dependencies.bats-core.heads."refs/pull/58/head"]
+commit = "da7bda5ecc66a2e0c9566a4e484cca19855678c5"
+
+[dependencies.bats-core.heads."refs/pull/581/head"]
+commit = "656faf352b739c832b317669c8c6b8b48c67b550"
+
+[dependencies.bats-core.heads."refs/pull/583/head"]
+commit = "884d07a34c244113b3c8886a9ca63963ea51c2c6"
+
+[dependencies.bats-core.heads."refs/pull/585/head"]
+commit = "959f06d3962baa6c878af74da474b705cf4fd098"
+
+[dependencies.bats-core.heads."refs/pull/586/head"]
+commit = "7c0cabf4ba9a69a8a72ab280c18753322aec03f3"
+
+[dependencies.bats-core.heads."refs/pull/587/head"]
+commit = "200e8682306d86f61bbd4c4f1ec6ece2f2d45384"
+
+[dependencies.bats-core.heads."refs/pull/589/head"]
+commit = "691d17fd98c889001b93657546204513904217c2"
+
+[dependencies.bats-core.heads."refs/pull/59/head"]
+commit = "fb930597df9d27188f97998e04e5c1922af75957"
+
+[dependencies.bats-core.heads."refs/pull/593/head"]
+commit = "c7f7772c7f8a19ee309c8eee337a8170b0211d27"
+
+[dependencies.bats-core.heads."refs/pull/595/head"]
+commit = "c20b54fd45d6adc98c20fa311f85f1a10904be6e"
+
+[dependencies.bats-core.heads."refs/pull/596/head"]
+commit = "4d9cb50dd53f9134fcbbd2dc5df2413273d421b8"
+
+[dependencies.bats-core.heads."refs/pull/597/head"]
+commit = "6498b39179063a500b0fc600f0a2e9ba5612ce26"
+
+[dependencies.bats-core.heads."refs/pull/599/head"]
+commit = "690ba7b3d07577e03a64f023ebd6f4ac754154b5"
+
+[dependencies.bats-core.heads."refs/pull/6/head"]
+commit = "3a6efc03cf1f118e3d2f3f6737527e6c7f6273d7"
+
+[dependencies.bats-core.heads."refs/pull/60/head"]
+commit = "665dc164cd7a67264abd24b22cbf9979c5465ecf"
+
+[dependencies.bats-core.heads."refs/pull/602/head"]
+commit = "cea8b34251043b00c75d48647a70f7e6cda99cbf"
+
+[dependencies.bats-core.heads."refs/pull/603/head"]
+commit = "e668e0bda63271eb5f6c38406afebf90c5a20790"
+
+[dependencies.bats-core.heads."refs/pull/604/head"]
+commit = "745e97dedcfd8ca4e3502080f3fac7e31ce371a3"
+
+[dependencies.bats-core.heads."refs/pull/607/head"]
+commit = "5e328bf849cc33150c18e9e2420f1d993a7eff5b"
+
+[dependencies.bats-core.heads."refs/pull/612/head"]
+commit = "e7cd5bf20a6ae526d3c9007d7f55417e82299b60"
+
+[dependencies.bats-core.heads."refs/pull/617/head"]
+commit = "be3b5cea5a24153463cf1a2ab4041fbd2d30609a"
+
+[dependencies.bats-core.heads."refs/pull/618/head"]
+commit = "f18665d98706101c1f86ee4f75ae2aab9e580ccc"
+
+[dependencies.bats-core.heads."refs/pull/619/head"]
+commit = "91d4430c8ec3e6d5cd6bd1b215c40932321ccf98"
+
+[dependencies.bats-core.heads."refs/pull/62/head"]
+commit = "3d9f24ba19328afedccdc10d2523e8878b98b747"
+
+[dependencies.bats-core.heads."refs/pull/621/head"]
+commit = "e2cf761de2138b5551482c34e6e9aed2d709c9fa"
+
+[dependencies.bats-core.heads."refs/pull/622/head"]
+commit = "85fdd70573e4e9bc337849e6b67047f98f9fe76c"
+
+[dependencies.bats-core.heads."refs/pull/623/head"]
+commit = "237b8ff5bac2944a4fcdc5abc37e09fc7243f610"
+
+[dependencies.bats-core.heads."refs/pull/627/head"]
+commit = "eff7ca502ce94109621e7a78e89e8b76e974fde5"
+
+[dependencies.bats-core.heads."refs/pull/628/head"]
+commit = "7cfbf8a1d89a26d73f202143ca60d1ca67c50cad"
+
+[dependencies.bats-core.heads."refs/pull/63/head"]
+commit = "62b8fe3f293162fc4fc68c35b5a051d07ab8e657"
+
+[dependencies.bats-core.heads."refs/pull/630/head"]
+commit = "e06e366d47e3cd589463f22900a74008b43ef666"
+
+[dependencies.bats-core.heads."refs/pull/631/head"]
+commit = "9f401f8f34d1829d3361941696a22e68945c17be"
+
+[dependencies.bats-core.heads."refs/pull/632/head"]
+commit = "9db852e06c77af13328e6352a9f1050cc047c380"
+
+[dependencies.bats-core.heads."refs/pull/633/head"]
+commit = "e8e82c07ce5832d2927bda5ccde7dfc444d842c8"
+
+[dependencies.bats-core.heads."refs/pull/641/head"]
+commit = "5f22ef4478adc7bfeac927207bdd3670556df58f"
+
+[dependencies.bats-core.heads."refs/pull/642/head"]
+commit = "dce83d0846f19ac7e0908fa0bfe55ace5f286e73"
+
+[dependencies.bats-core.heads."refs/pull/643/head"]
+commit = "15c981f363776ea64d26c70618c2e7b067387008"
+
+[dependencies.bats-core.heads."refs/pull/644/head"]
+commit = "312020a0801b778e43b11451a9c932ff4ebf9347"
+
+[dependencies.bats-core.heads."refs/pull/645/head"]
+commit = "250d0635b34ca519792da10b26c46898c5cd7af5"
+
+[dependencies.bats-core.heads."refs/pull/646/head"]
+commit = "548a7007229b4432e0a654364632a289eb4d215f"
+
+[dependencies.bats-core.heads."refs/pull/648/head"]
+commit = "7044d3876a513c973248f9fc9973745cffde0a1a"
+
+[dependencies.bats-core.heads."refs/pull/649/head"]
+commit = "e67bbb07dea6447696bc23d9fa683826ea856235"
+
+[dependencies.bats-core.heads."refs/pull/65/head"]
+commit = "d4c72844265a6075de04c417a9dcad57cd511912"
+
+[dependencies.bats-core.heads."refs/pull/650/head"]
+commit = "5b20704f8ef1082bd548a4d0d510bab77a2a6013"
+
+[dependencies.bats-core.heads."refs/pull/651/head"]
+commit = "def9ee0228fc3ad08b61ec5f7789c2f4267d66d3"
+
+[dependencies.bats-core.heads."refs/pull/652/head"]
+commit = "430c1df38fb123b7e70d81a4e816fcc170482830"
+
+[dependencies.bats-core.heads."refs/pull/656/head"]
+commit = "57c63524b3141a09ef570dc2451f6522dc6019a5"
+
+[dependencies.bats-core.heads."refs/pull/657/head"]
+commit = "58fa597e467139c213ae495dbca781435fa12c0a"
+
+[dependencies.bats-core.heads."refs/pull/659/head"]
+commit = "42f008809b2d832b84e41b225796b05433c0af80"
+
+[dependencies.bats-core.heads."refs/pull/66/head"]
+commit = "d48f493755b6a4e55db0e39c2c66c7bd83438611"
+
+[dependencies.bats-core.heads."refs/pull/663/head"]
+commit = "5876f947246e0d513082b2fb5a117a38bab51a3d"
+
+[dependencies.bats-core.heads."refs/pull/663/merge"]
+commit = "908c67c8384598b266957a50a3abb37f1af5e6c5"
+
+[dependencies.bats-core.heads."refs/pull/665/head"]
+commit = "9bad417e76c44d6d3b0769a3636f68217ad18797"
+
+[dependencies.bats-core.heads."refs/pull/67/head"]
+commit = "bfbd0883bde91dc77f83f132df985d6a264dc000"
+
+[dependencies.bats-core.heads."refs/pull/670/head"]
+commit = "72beb85323c9f7996ce7b13ce0308a65cfe2cc07"
+
+[dependencies.bats-core.heads."refs/pull/671/head"]
+commit = "d041de46d0ee3d5f0627796ec8c79c4665108bca"
+
+[dependencies.bats-core.heads."refs/pull/673/head"]
+commit = "a5c22a64da177842fce6ad890bb6e33e532f5b4c"
+
+[dependencies.bats-core.heads."refs/pull/674/head"]
+commit = "8d43d5c20a426d56720e2a774c4d631112d451a1"
+
+[dependencies.bats-core.heads."refs/pull/677/head"]
+commit = "cb0760219412df49ad90dc86ca2da71290158761"
+
+[dependencies.bats-core.heads."refs/pull/679/head"]
+commit = "31977c8aa7051fca3d0631c8aab331af94bac61e"
+
+[dependencies.bats-core.heads."refs/pull/68/head"]
+commit = "ab643e04b95881ee139d8f7d14f903d65b4a664e"
+
+[dependencies.bats-core.heads."refs/pull/687/head"]
+commit = "4f87994fa44e8593aca7c29bf6f64ea9f295c38b"
+
+[dependencies.bats-core.heads."refs/pull/691/head"]
+commit = "9a3b136fa1f44cbac4739e2bb2721644c988d6ca"
+
+[dependencies.bats-core.heads."refs/pull/692/head"]
+commit = "fb0909fb748a480e6fd3ea1dbde2af0a91861fcf"
+
+[dependencies.bats-core.heads."refs/pull/693/head"]
+commit = "2da73a0213d217133fb3ddab33df208125b0fa88"
+
+[dependencies.bats-core.heads."refs/pull/70/head"]
+commit = "aa10601fbda8346720acfc0398bac996287890f8"
+
+[dependencies.bats-core.heads."refs/pull/70/merge"]
+commit = "b7d3be78edcb88bd1eb6a8c30a9adacbdab76218"
+
+[dependencies.bats-core.heads."refs/pull/704/head"]
+commit = "116fc1c0ebcda45de978db6584bca0a82e2cee1a"
+
+[dependencies.bats-core.heads."refs/pull/705/head"]
+commit = "1466d6e77d4465f14a33426673347d2673642ca6"
+
+[dependencies.bats-core.heads."refs/pull/71/head"]
+commit = "dbd87c2ab08cd703c503c110e7f123789f38c8b6"
+
+[dependencies.bats-core.heads."refs/pull/710/head"]
+commit = "5c851a41a4408dcececcc3502fd96fcf04d90498"
+
+[dependencies.bats-core.heads."refs/pull/711/head"]
+commit = "6648e2143bffb9334ddde95aad92d962bc0d4848"
+
+[dependencies.bats-core.heads."refs/pull/717/head"]
+commit = "0006a9b534d4d39c0139138807a63da72604c3d3"
+
+[dependencies.bats-core.heads."refs/pull/717/merge"]
+commit = "4ff8e10c2d9ff7df799965b2e77835d59fddf6a5"
+
+[dependencies.bats-core.heads."refs/pull/718/head"]
+commit = "0674f10e69c1fa094c8a4961346fdfe134fe6881"
+
+[dependencies.bats-core.heads."refs/pull/718/merge"]
+commit = "cbefa477bc7777ab0abff359f3dd47b6214c2f4d"
+
+[dependencies.bats-core.heads."refs/pull/74/head"]
+commit = "be2f8df157ca09f2f6572edf3a07ef91b7c15b1d"
+
+[dependencies.bats-core.heads."refs/pull/75/head"]
+commit = "9a9ea69dd256d5156c73f5891a9f309df62ee0f5"
+
+[dependencies.bats-core.heads."refs/pull/8/head"]
+commit = "ebb192e036284b5006ecac08343c72be6e93e19b"
+
+[dependencies.bats-core.heads."refs/pull/82/head"]
+commit = "3310f25854888a3cfe2b54ab68c1d88991c30907"
+
+[dependencies.bats-core.heads."refs/pull/87/head"]
+commit = "086e6c6f143ffc878fb374cddcc8058c4a68251b"
+
+[dependencies.bats-core.heads."refs/pull/88/head"]
+commit = "6992a29079047a266f9242bea8d84ea9e925bef2"
+
+[dependencies.bats-core.heads."refs/pull/9/head"]
+commit = "37d599858958b5fff475433410bb6283f4bbfb5c"
+
+[dependencies.bats-core.heads."refs/pull/91/head"]
+commit = "3228a7465474e2d994a340d0e67b3d0c0f444e9e"
+
+[dependencies.bats-core.heads."refs/pull/92/head"]
+commit = "7dfefe7ede87a9127e049887a66cce30740ffcd3"
+
+[dependencies.bats-core.heads."refs/pull/93/head"]
+commit = "59d4a9daebc156f5bafc14b9392189ad10521a0b"
+
+[dependencies.bats-core.heads."refs/pull/94/head"]
+commit = "5eaeb29418b12af21f33ed7c07fe16dd5c0130ab"
+
+[dependencies.bats-core.heads."refs/pull/96/head"]
+commit = "c225bdc1709b07fcf7a2e86b68006ce00ef96491"
+
+[dependencies.bats-core.heads."refs/pull/97/head"]
+commit = "28dd9d6817299536a5b28aaa8290923d6cb9df4d"
+
+[dependencies.bats-core.heads."refs/pull/98/head"]
+commit = "890834f2275b6f34e9cb6ce719ed9b5eef81c83b"
+
+[dependencies.bats-core.heads."refs/pull/99/head"]
+commit = "cdfcdb96bf4ec59212968a1a98138f285abe8c44"
+
+[dependencies.bats-core.heads."refs/tags/v0.1.0"]
+commit = "2f192ebffa8f8f8d1a5882e74188d6f67b295950"
+
+[dependencies.bats-core.heads."refs/tags/v0.2.0"]
+commit = "5030f53eccc66ba9a041d1a4a28f73286de50449"
+
+[dependencies.bats-core.heads."refs/tags/v0.3.0"]
+commit = "0e5e44572844ce8fd027d96a5001125c33abd822"
+
+[dependencies.bats-core.heads."refs/tags/v0.3.1"]
+commit = "2e2477881bc52791f7bc0321599064b9daf7c6bf"
+
+[dependencies.bats-core.heads."refs/tags/v0.4.0"]
+commit = "7b032e4b232666ee24f150338bad73de65c7b99d"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.0"]
+commit = "9e8f44ca249fbbd206323d5c3c27e3313ffead35"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.0^{}"]
+commit = "0690be2b58890d5c36a80104c307729952cc981e"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.1"]
+commit = "d6392e4ddd4110d96b7230b50c84f72ea16cb853"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.1^{}"]
+commit = "7f5b59b2946d5c872b8ac4ca4c9f5a71e7b5ea57"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.2"]
+commit = "ac91204dd1df8e96534aa3bfd04b3ea137521b62"
+
+[dependencies.bats-core.heads."refs/tags/v1.0.2^{}"]
+commit = "70b783e46d936152c7e4af06e51daa71747cf6a8"
+
+[dependencies.bats-core.heads."refs/tags/v1.1.0"]
+commit = "2e3bac14d4201481d270310317e00d116d4355be"
+
+[dependencies.bats-core.heads."refs/tags/v1.1.0^{}"]
+commit = "c706d1470dd1376687776bbe985ac22d09780327"
+
+[dependencies.bats-core.heads."refs/tags/v1.2.0"]
+commit = "2d56bbe945ef45692369874e0efecfe86eb9a99c"
+
+[dependencies.bats-core.heads."refs/tags/v1.2.0^{}"]
+commit = "73b8d2f95513207b319efe34685553b75c0b214e"
+
+[dependencies.bats-core.heads."refs/tags/v1.2.1"]
+commit = "4b17cd41361f35851d84dedb28ebf3820425bf51"
+
+[dependencies.bats-core.heads."refs/tags/v1.2.1^{}"]
+commit = "dcaec03e32e0b152f8ef9cf14b75296cf5caeaff"
+
+[dependencies.bats-core.heads."refs/tags/v1.3.0"]
+commit = "0022fc7da636ba2543488c38131b2488514793d9"
+
+[dependencies.bats-core.heads."refs/tags/v1.3.0^{}"]
+commit = "9086c47854652f2731861b40385689c85f12103f"
+
+[dependencies.bats-core.heads."refs/tags/v1.4.0"]
+commit = "9f27e3c47d70ad5aa99e4674593155652c195344"
+
+[dependencies.bats-core.heads."refs/tags/v1.4.1"]
+commit = "8fb8ea0d3cca1b3bebc12111a9fb2f9a6919c90a"
+
+[dependencies.bats-core.heads."refs/tags/v1.4.1^{}"]
+commit = "54e965fa9d269c2b3ff9036d81f32bac3df0edea"
+
+[dependencies.bats-core.heads."refs/tags/v1.5.0"]
+commit = "3abb5188d82bda373969cf2a7edf5b0e08407f32"
+
+[dependencies.bats-core.heads."refs/tags/v1.5.0-docfix"]
+commit = "90f86c3e8fda5368ae2cb0d6e38285756a50c451"
+
+[dependencies.bats-core.heads."refs/tags/v1.5.0^{}"]
+commit = "99d64eb017abcd6a766dd0d354e625526da69cb3"
+
+[dependencies.bats-core.heads."refs/tags/v1.6.0"]
+commit = "f72c1f7004642eb1bbde5499961349950a739739"
+
+[dependencies.bats-core.heads."refs/tags/v1.6.0^{}"]
+commit = "210acf3a8ed318ddedad3137c15451739beba7d4"
+
+[dependencies.bats-core.heads."refs/tags/v1.6.1"]
+commit = "fe943041dd02c367c51ae57dedff5d816e489f20"
+
+[dependencies.bats-core.heads."refs/tags/v1.6.1^{}"]
+commit = "1977254c2a7faa2e0af17355856f91dc471d1daa"
+
+[dependencies.bats-core.heads."refs/tags/v1.7.0"]
+commit = "c4395b728d209c23f529c089436b9808c641073c"
+
+[dependencies.bats-core.heads."refs/tags/v1.7.0^{}"]
+commit = "410dd229a5ed005c68167cc90ed0712ad2a1c909"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.0"]
+commit = "dbe636ed7ea9238480f566d1b5ebcba9a39ba38c"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.0^{}"]
+commit = "e9b286bb39ad7b0cb7b7d2e819d44d1aff387522"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.1"]
+commit = "3ad165dad9b532e678bd60807fe1bfd291220b73"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.1^{}"]
+commit = "27807aef5a1f62e1856ab830d22573fa2d193192"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.2"]
+commit = "978dffd98b6793b09594e5e96ef797146be8bc9f"
+
+[dependencies.bats-core.heads."refs/tags/v1.8.2^{}"]
+commit = "e8c840b58f0833e23461c682655fe540aa923f85"
+
+[dependencies.bats-core.heads."refs/tags/v1.9.0"]
+commit = "667273788aad3f189851cf6a1b3ba371956dc57e"
+
+[dependencies.bats-core.heads."refs/tags/v1.9.0^{}"]
+commit = "6636e2c2ef5ffe361535cb45fc61682c5ef46b71"
+
 [dependencies.bats-support]
 url = "https://github.com/bats-core/bats-support.git"
 
