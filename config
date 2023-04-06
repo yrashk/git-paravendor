@@ -1,5 +1,152 @@
 version = "1.1"
 
+[dependencies.bats-assert]
+url = "https://github.com/bats-core/bats-assert.git"
+
+[dependencies.bats-assert.heads.HEAD]
+commit = "44913ffe6020d1561c4c4d1e26cda8e07a1f374f"
+
+[dependencies.bats-assert.heads."refs/heads/assert-refute-empty"]
+commit = "d1c641a0793744656d283f819215686f4069ee14"
+
+[dependencies.bats-assert.heads."refs/heads/bundle-deps-for-tests"]
+commit = "a7ed409f31da64806c503ed3157e29714d16f56e"
+
+[dependencies.bats-assert.heads."refs/heads/master"]
+commit = "44913ffe6020d1561c4c4d1e26cda8e07a1f374f"
+
+[dependencies.bats-assert.heads."refs/heads/pr/gioele/49"]
+commit = "7edd03d7555d3c4b7d768b1fb430f08aa67dc9f3"
+
+[dependencies.bats-assert.heads."refs/heads/simplify-travis"]
+commit = "467046fd6170f7538ba73ba6262595e21bcabd7b"
+
+[dependencies.bats-assert.heads."refs/heads/stdin"]
+commit = "adc1c7bacf66f7af8c201402fb1de69ab79cc4ae"
+
+[dependencies.bats-assert.heads."refs/heads/sync-master"]
+commit = "423ac71a19079007831bec39b02db2a72c3c744f"
+
+[dependencies.bats-assert.heads."refs/pull/1/head"]
+commit = "84175f6100eee7ea6ce5f595aa745ce659952213"
+
+[dependencies.bats-assert.heads."refs/pull/19/head"]
+commit = "40aad9873658efe96b9d54658d843a47d250f3b6"
+
+[dependencies.bats-assert.heads."refs/pull/2/head"]
+commit = "8ccba4680979c670bdfdd04d17b7e54c5c83d802"
+
+[dependencies.bats-assert.heads."refs/pull/21/head"]
+commit = "55547e5713ed9a76881ac247184cdaf85ad5e93c"
+
+[dependencies.bats-assert.heads."refs/pull/22/head"]
+commit = "b9cc724183fc7f22e4411b75469fe0aee758bb6d"
+
+[dependencies.bats-assert.heads."refs/pull/23/head"]
+commit = "0633b175a1c66c6b4c9c842f33dca9e9f9df1f90"
+
+[dependencies.bats-assert.heads."refs/pull/25/head"]
+commit = "7dd271811ec3980d03f937a62dbb1958a7ee665a"
+
+[dependencies.bats-assert.heads."refs/pull/26/head"]
+commit = "116c9cdb1994f3546c58222d9c6d43f419685bdc"
+
+[dependencies.bats-assert.heads."refs/pull/29/head"]
+commit = "e56fe279e547683c7674771fe2386312d21df4e8"
+
+[dependencies.bats-assert.heads."refs/pull/3/head"]
+commit = "8a1c119fec99fca1725e9381d389c557adcb3b9a"
+
+[dependencies.bats-assert.heads."refs/pull/30/head"]
+commit = "6ba332f34526819d06461704c57b7642f0f1e024"
+
+[dependencies.bats-assert.heads."refs/pull/35/head"]
+commit = "2a9c1de671e85d3ca991c455846d25179a67e240"
+
+[dependencies.bats-assert.heads."refs/pull/36/head"]
+commit = "508e738bdbcd7061b554dd4e459553c43d9149d0"
+
+[dependencies.bats-assert.heads."refs/pull/37/head"]
+commit = "a04c086c1bdaf71cc9b99d0cfeb8b91b7e575d35"
+
+[dependencies.bats-assert.heads."refs/pull/39/head"]
+commit = "eff064ca17fc70b7260705654d5701c62ef3709d"
+
+[dependencies.bats-assert.heads."refs/pull/4/head"]
+commit = "83e892c71a1b5b1e524d758cf957909281a75211"
+
+[dependencies.bats-assert.heads."refs/pull/41/head"]
+commit = "a89786dc518523beac68c7f3781886e50229c3f4"
+
+[dependencies.bats-assert.heads."refs/pull/43/head"]
+commit = "d950f28c38556bacabeb700cec1837f527b16504"
+
+[dependencies.bats-assert.heads."refs/pull/44/head"]
+commit = "baffb32e5dc6094df03239ab6286ce4ab8381ae3"
+
+[dependencies.bats-assert.heads."refs/pull/45/head"]
+commit = "eded7890ce4cc0c41effe6abd1efd1ca3064fd68"
+
+[dependencies.bats-assert.heads."refs/pull/49/head"]
+commit = "58236f42c8fc47d5d3f708d54b93b5583a50fd87"
+
+[dependencies.bats-assert.heads."refs/pull/52/head"]
+commit = "87baa97abe18b0e80445c3b2c04fa9b9db3f4e52"
+
+[dependencies.bats-assert.heads."refs/pull/52/merge"]
+commit = "478e1b58acb9dfef2bc0dbce183e74f3ad4b45f9"
+
+[dependencies.bats-assert.heads."refs/pull/54/head"]
+commit = "51f5fd7b4bb048b4c850566ec0e94185e027b881"
+
+[dependencies.bats-assert.heads."refs/pull/55/head"]
+commit = "5b006b27d2a919b32cc713b445a40b20ac187e41"
+
+[dependencies.bats-assert.heads."refs/pull/56/head"]
+commit = "32f2ca59b5e547dc552409e693785a3a024db37f"
+
+[dependencies.bats-assert.heads."refs/pull/57/head"]
+commit = "0beceef482244d02519595cb81ac5cbf6686f664"
+
+[dependencies.bats-assert.heads."refs/pull/58/head"]
+commit = "effe6f58f839404f5935154b28565d0c4adf6977"
+
+[dependencies.bats-assert.heads."refs/pull/59/head"]
+commit = "423ac71a19079007831bec39b02db2a72c3c744f"
+
+[dependencies.bats-assert.heads."refs/pull/59/merge"]
+commit = "0b33dd09be1f966053ef5177c7c438e75e667f37"
+
+[dependencies.bats-assert.heads."refs/pull/8/head"]
+commit = "4289324735152670d4d72e3b7cf36c8d92e3d67b"
+
+[dependencies.bats-assert.heads."refs/tags/v0.1.0"]
+commit = "f80edb877c959558731c3078e7c377e712d878ef"
+
+[dependencies.bats-assert.heads."refs/tags/v0.1.0^{}"]
+commit = "f861a59dc88c7b195c87618ef79a918f700319f6"
+
+[dependencies.bats-assert.heads."refs/tags/v0.2.0"]
+commit = "b02a5517a7bbf2894e9bc0b8b2baffd92fcbb6b2"
+
+[dependencies.bats-assert.heads."refs/tags/v0.2.0^{}"]
+commit = "f59d97bd3cdff25d1689c855023d913bcffa1efc"
+
+[dependencies.bats-assert.heads."refs/tags/v0.3.0"]
+commit = "1aa0b5a53ad48cc857ee8f952debad83e7b1226e"
+
+[dependencies.bats-assert.heads."refs/tags/v0.3.0^{}"]
+commit = "9f88b4207da750093baabc4e3f41bf68f0dd3630"
+
+[dependencies.bats-assert.heads."refs/tags/v2.0.0"]
+commit = "08c40b485c08f82eb17e4d6e1ba052eee18cabd5"
+
+[dependencies.bats-assert.heads."refs/tags/v2.0.0^{}"]
+commit = "d750c5a1b44bf6fc96726aea76f4621db5fd602f"
+
+[dependencies.bats-assert.heads."refs/tags/v2.1.0"]
+commit = "78fa631d1370562d2cd4a1390989e706158e7bf0"
+
 [dependencies.bats-core]
 url = "https://github.com/bats-core/bats-core.git"
 
