@@ -1,3 +1,52 @@
 version = "1.1"
 
-[dependencies]
+[dependencies.bats-support]
+url = "https://github.com/bats-core/bats-support.git"
+
+[dependencies.bats-support.heads.HEAD]
+commit = "3c8fadc5097c9acfc96d836dced2bb598e48b009"
+
+[dependencies.bats-support.heads."refs/heads/master"]
+commit = "3c8fadc5097c9acfc96d836dced2bb598e48b009"
+
+[dependencies.bats-support.heads."refs/heads/packagejson-metadata"]
+commit = "a56ec7f7664cdbda3d3f3c592624a0d9e04d657a"
+
+[dependencies.bats-support.heads."refs/pull/1/head"]
+commit = "c2c416856ce8f4b3c8a2f5d17dcdb064a6521eb7"
+
+[dependencies.bats-support.heads."refs/pull/2/head"]
+commit = "6af41847af3cb820d7e8a4a02cdced726d5e7b55"
+
+[dependencies.bats-support.heads."refs/pull/2/merge"]
+commit = "223786c6d4d00a1fcf36e2816fe5be7126e0bc6e"
+
+[dependencies.bats-support.heads."refs/pull/3/head"]
+commit = "47613734572ec7eea76b22efef1df0b23296fa9a"
+
+[dependencies.bats-support.heads."refs/pull/4/head"]
+commit = "443839be8f211873148bbd9921cf062d65577c8e"
+
+[dependencies.bats-support.heads."refs/pull/6/head"]
+commit = "eb42a04ff2e394d3435e1a3f2302a481f332db92"
+
+[dependencies.bats-support.heads."refs/pull/7/head"]
+commit = "d90abca995698aa60226004cf4e80dfdc3855fb7"
+
+[dependencies.bats-support.heads."refs/tags/v0.1.0"]
+commit = "67d87d934b40acc7120556ea0915251d71885e49"
+
+[dependencies.bats-support.heads."refs/tags/v0.1.0^{}"]
+commit = "023b3e624b401e3540e743bcb1ac084882b4c51e"
+
+[dependencies.bats-support.heads."refs/tags/v0.2.0"]
+commit = "ca31457052d2a573c209ffe7c3bad7b99830b8f8"
+
+[dependencies.bats-support.heads."refs/tags/v0.2.0^{}"]
+commit = "d0a131831c487a1f1141e76d3ab386c89642cdff"
+
+[dependencies.bats-support.heads."refs/tags/v0.3.0"]
+commit = "64e7436962affbe15974d181173c37e1fac70073"
+
+[dependencies.bats-support.heads."refs/tags/v0.3.0^{}"]
+commit = "24a72e14349690bcbf7c151b9d2d1cdd32d36eb1"
