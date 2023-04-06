@@ -1,0 +1,18 @@
+[package]
+name = "git-paravendor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.70"
+clap = { version ="4.2.1", features = ["derive", "env"] }
+git2 = "0.17.0"
+indicatif = "0.17.3"
+serde = { version = "1.0.159", features = ["derive"] }
+toml = "0.7.3"
+which = "4.4.0"
+
+[dev-dependencies]
+tempfile = "3.5.0"

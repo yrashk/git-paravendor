@@ -1,10 +1,12 @@
-bats_ref=$(shell ./git-paravendor show-ref https://github.com/bats-core/bats-core.git v1.9.0)
-bats_support_ref=$(shell ./git-paravendor show-ref https://github.com/bats-core/bats-support.git v0.3.0)
-bats_assert_ref=$(shell ./git-paravendor show-ref https://github.com/bats-core/bats-assert.git v2.1.0)
+bats_ref=$(shell cargo run --quiet -- show-ref bats-core v1.9.0)
+bats_support_ref=$(shell cargo run --quiet -- show-ref bats-support v0.3.0)
+bats_assert_ref=$(shell cargo run --quiet -- show-ref bats-assert v2.1.0)
 
 .PHONY: test
 
 test: test/bats test/test_helper/bats-support test/test_helper/bats-assert
+	cargo test
+	cargo build
 	./test/bats/bin/bats test
 
 test/bats: Makefile
