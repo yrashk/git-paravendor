@@ -22,13 +22,13 @@ git paravendor init
 ### Vendoring
 
 ```shell
-git paravendor add <git repo url>
+git paravendor add <name> <git repo url>
 ```
 
 ### Syncing dependencies
 
 ```shell
-git paravendor sync [<git repo url>]
+git paravendor sync [<name>]...
 ```
 
 If URL is not provided, it will sync all repostories.
@@ -42,12 +42,7 @@ git paravendor list
 ## Checking out dependencies
 
 ```shell
-ref=$(git paravendor show-ref <git repo url> <branch/tag name>)
+ref=$(git paravendor show-ref <name> <ref/branch/tag name>)
 git clone . --no-checkout <dependency> && cd <dependecy>
 git checkout $ref
 ```
-
-# Notes
-
-This command is currently implemented as a shell script and has some minor
-performance issues. It may get rewritten in a different language down the road.

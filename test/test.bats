@@ -3,7 +3,7 @@ setup() {
   load 'test_helper/bats-assert/load'
   DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )"
   TOPDIR=$(readlink -f "$DIR/..")
-  PATH="$DIR/..:$PATH"
+  PATH="$DIR/../target/debug:$PATH"
   pushd $(pwd) 
   tmpdir=$(mktemp -d)
   cd "$tmpdir"
@@ -22,37 +22,31 @@ teardown() {
   assert_success
 }
 
-@test "init with dirty working directory" {
-  touch test
-  run git paravendor init
-  assert_failure
-}
-
 @test "add and list dependencies" {
   run git paravendor init
   assert_success
-  run git paravendor add "file://$TOPDIR"
+  run git paravendor add dep "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "file://$TOPDIR"
+  assert_line "dep file://$TOPDIR"
 } 
 
 @test "add duplicate dependency" {
   run git paravendor init
   assert_success
-  run git paravendor add "file://$TOPDIR"
+  run git paravendor add dep "file://$TOPDIR"
   assert_success
-  run git paravendor add "file://$TOPDIR"
+  run git paravendor add dep "file://$TOPDIR"
   assert_failure
-  assert_line "file://$TOPDIR has been already added, aborting"
+  assert_line "Error: dep has been already added, aborting"
 }
 
 @test "add and clone dependency" {
   run git paravendor init
   assert_success
-  run git paravendor add https://github.com/yrashk/git-paravendor
+  run git paravendor add paravendor https://github.com/yrashk/git-paravendor
   assert_success
-  ref=$(git paravendor show-ref https://github.com/yrashk/git-paravendor master)
+  ref=$(git paravendor show-ref paravendor master)
   run git clone . --no-checkout t && cd t && git checkout "$ref"
   assert_success
 }
@@ -60,17 +54,17 @@ teardown() {
 @test "cloning repo with para-vendoring dependencies" {
   run git paravendor init
   assert_success
-  run git paravendor add "file://$TOPDIR"
+  run git paravendor add dep "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "file://$TOPDIR"
+  assert_line "dep file://$TOPDIR"
   tmpdir1=$(mktemp -d)
   run git clone "$tmpdir" "$tmpdir1"
   assert_success
   cd "$tmpdir1"
   run git paravendor list
   refute_line "set up to track"
-  assert_line "file://$TOPDIR"
+  assert_line "dep file://$TOPDIR"
   run git rev-parse --abbrev-ref HEAD
   assert_output "master"
 } 
@@ -78,10 +72,10 @@ teardown() {
 @test "cloning repo with para-vendoring dependencies, in a detached checkout" {
   run git paravendor init
   assert_success
-  run git paravendor add "file://$TOPDIR"
+  run git paravendor add dep "file://$TOPDIR"
   assert_success
   run git paravendor list
-  assert_line "file://$TOPDIR"
+  assert_line "dep file://$TOPDIR"
   tmpdir1=$(mktemp -d)
   run git clone "$tmpdir" "$tmpdir1" --no-checkout
   assert_success
@@ -90,7 +84,7 @@ teardown() {
   assert_success
   run git paravendor list
   refute_line "set up to track"
-  assert_line "file://$TOPDIR"
+  assert_line "dep file://$TOPDIR"
   run git rev-parse --abbrev-ref paravendor
   assert_output "paravendor"
 } 

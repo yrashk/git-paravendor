@@ -18,6 +18,15 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: nightly
+        override: stable
+
+    - name: Get origin branches
+      run: git fetch origin
+
     - name: Run test
       run: |
         git config --global user.name CI
